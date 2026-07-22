@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color — Prynia brand palette */
+  --color-ink: #023357;
+  --color-ink-soft: #285270;
+  --color-paper: #E6E5E4;
+  --color-paper-dim: #D4D3D2;
+  --color-slate: #527188;
+  --color-mist: #BAC2C8;
+  --color-gold: #2E8A98;
+  --color-gold-soft: #62A7B2;
+  --color-emerald: #2E8A98;
+  --color-emerald-soft: #EAF3F5;
+  --color-coral: #FF5757;
+  --color-coral-soft: #FFEEEE;
+  --color-white: #FFFFFF;
+
+  /* Fonts — Prynia brand typefaces */
+  --font-display: "Archivo Black", "Arial Black", sans-serif;
+  --font-body: "Open Sans", Arial, Helvetica, sans-serif;
+  --font-mono: "Open Sans", Arial, sans-serif;
+
+  --radius-sm: 2px;
+  --radius-md: 3px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Visible keyboard focus everywhere, styled to match the brand instead
+   of the browser default blue ring. */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+/* Shared utility classes used across sections */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.container-prynia {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-prynia {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.hairline {
+  border-color: rgba(16, 27, 38, 0.12);
+}
