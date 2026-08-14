@@ -52,7 +52,7 @@ export default function CTASection({
           </h2>
 
           <div className="mt-8 flex justify-center">
-            <Button to={buttonTo} variant="gold">
+            <Button to={buttonTo} variant="gold" className="!font-bold">
               {resolvedButtonLabel}
             </Button>
           </div>

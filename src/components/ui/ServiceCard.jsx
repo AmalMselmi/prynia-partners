@@ -33,7 +33,8 @@ export default function ServiceCard({ service, title, description, items, ctaLab
         </ul>
       )}
       <div className="mt-auto pt-2">
-        <Button to="/contact" variant="ghost" className="!px-0 !py-0 font-bold text-base">
+        <Button to="/contact" variant="ghost"   className="!px-0 !py-0 !font-bold text-base"
+>
           {ctaLabel}
         </Button>
       </div>
