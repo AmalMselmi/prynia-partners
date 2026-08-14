@@ -26,9 +26,13 @@ export default function PageBanner({ eyebrow, title, description }) {
             {title}
           </h1>
           {description && (
-            <p className="mt-5 text-base md:text-lg text-paper/75 leading-relaxed">
-              {description}
-            </p>
+            <div className="mt-5 flex flex-col gap-2 text-base md:text-lg text-paper/75 leading-relaxed">
+              {Array.isArray(description) ? (
+                description.map((line, i) => <p key={i}>{line}</p>)
+              ) : (
+                <p>{description}</p>
+              )}
+            </div>
           )}
         </motion.div>
       </div>

@@ -1,0 +1,4 @@
+backend: cd server
+         node index.js
+
+frontend: npm run dev

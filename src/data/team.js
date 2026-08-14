@@ -1,36 +1,11 @@
+import ceoPhotoImg from '../assets/Narjess_hachena.png'
+import consultantPhoto from '../assets/Hind_houas.png'
+
 /**
- * Team roster. PLACEHOLDER CONTENT — replace name/role/bio with real
- * details, and add a `photo` path (e.g. imported from src/assets/)
- * once real headshots are available. Until then, TeamCard falls
- * back to a set of initials so nothing looks broken.
+ * Team photos only — name/role/description now live in the translation
+ * files under `team.ceo` and `team.members`, keyed by array index
+ * for the members list, so the same photo always lines up with the
+ * correct translated description regardless of language.
  */
-
-import ceoPhoto from '../assets/Narjess_hachena.png'
-
-export const ceo = {
-  name: 'Narjess Hachena',
-  role: 'Founder & Chief Executive Officer',
-  bio: 'Experienced practitioner with a demonstrated history of working with multinational organizations in the PR, project management and e-learning industries',
-  photo: ceoPhoto, 
-}
-
-export const team = [
-  {
-    name: 'Team Member Name',
-    role: 'Director of Advisory Studies',
-    bio: 'Description',
-    photo: null,
-  },
-  {
-    name: 'Team Member Name',
-    role: 'Director of Leadership Programs',
-    bio: 'Description',
-    photo: null,
-  },
-  {
-    name: 'Team Member Name',
-    role: 'Director of Strategic Engagement',
-    bio: 'Description',
-    photo: null,
-  },
-]
+export const ceoPhoto = ceoPhotoImg
+export const teamPhotos = [consultantPhoto]

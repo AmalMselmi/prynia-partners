@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { CheckCircle2 } from 'lucide-react'
 import { cn } from '../../utils/cn'
 import emailjs from '@emailjs/browser'
-
+import { useTranslation } from 'react-i18next'
 
 const fieldBase =
   'w-full border border-ink/20 bg-white/60 px-4 py-3 text-sm text-ink placeholder:text-slate/60 focus-visible:outline-2 focus-visible:outline-gold transition-colors'
@@ -16,6 +16,7 @@ const fieldBase =
  * call can be dropped in later without touching the JSX below.
  */
 export default function ContactForm() {
+  const { t } = useTranslation()
   const [submitted, setSubmitted] = useState(false)
   const {
     register,
@@ -24,24 +25,18 @@ export default function ContactForm() {
     formState: { errors, isSubmitting },
   } = useForm({ mode: 'onBlur' })
 
-  const onSubmit = async (data) => {
+const onSubmit = async (data) => {
   try {
-    await emailjs.send(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-      {
-        "Full Name": data.name,
-        "Organization": data.organization,
-        "Email": data.email,
-        "Country": data.country,
-        "Message": data.message,
-      },
-      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-    )
+    const response = await fetch('http://localhost:5000/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
+    if (!response.ok) throw new Error('Request failed')
     setSubmitted(true)
     reset()
   } catch (error) {
-    console.error('EmailJS error:', error)
+    console.error('Contact form error:', error)
     alert('Something went wrong sending your message. Please try again.')
   }
 }
@@ -56,17 +51,16 @@ export default function ContactForm() {
         role="status"
       >
         <CheckCircle2 size={32} strokeWidth={1.5} className="text-emerald" aria-hidden="true" />
-        <h3 className="font-display text-2xl text-ink">Message received.</h3>
+        <h3 className="font-display text-2xl text-ink">{t('contact.form.successTitle')}</h3>
         <p className="text-slate leading-relaxed">
-          Thank you for reaching out to Prynia Partners. A member of our team
-          will respond shortly.
-        </p>
+          {t('contact.form.successBody')}
+          </p>
         <button
           type="button"
           onClick={() => setSubmitted(false)}
           className="mt-2 font-body text-sm font-medium text-gold hover:text-ink transition-colors"
         >
-          Send another message
+          {t('contact.form.sendAnother')}
         </button>
       </motion.div>
     )
@@ -77,8 +71,9 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="mb-2 block font-mono text-xs uppercase tracking-wide text-slate">
-           Full Name
+            {t('contact.form.name')}
           </label>
+
           <input
             id="name"
             type="text"
@@ -93,7 +88,7 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="organization" className="mb-2 block font-mono text-xs uppercase tracking-wide text-slate">
-            Organization
+            {t('contact.form.organization')}
           </label>
           <input
             id="organization"
@@ -111,8 +106,9 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <div>
           <label htmlFor="email" className="mb-2 block font-mono text-xs uppercase tracking-wide text-slate">
-            Email
+            {t('contact.form.email')}
           </label>
+
           <input
             id="email"
             type="email"
@@ -133,8 +129,9 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="country" className="mb-2 block font-mono text-xs uppercase tracking-wide text-slate">
-            Country
+            {t('contact.form.country')}
           </label>
+
           <input
             id="country"
             type="text"
@@ -150,7 +147,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="message" className="mb-2 block font-mono text-xs uppercase tracking-wide text-slate">
-          Message
+          {t('contact.form.message')}
         </label>
         <textarea
           id="message"
@@ -172,7 +169,7 @@ export default function ContactForm() {
         disabled={isSubmitting}
         className="mt-2 inline-flex w-fit items-center justify-center bg-ink px-8 py-3 font-body text-sm font-medium text-paper transition-colors hover:bg-ink-soft disabled:opacity-60"
       >
-        {isSubmitting ? 'Sending…' : 'Send Message'}
+        {isSubmitting ? t('contact.form.sending') : t('contact.form.submit')}
       </button>
     </form>
   )

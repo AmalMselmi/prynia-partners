@@ -28,28 +28,6 @@ export const company = {
   ],
 }
 
-export const coreValues = [
-  {
-    title: 'Innovation',
-    description:
-      'We approach entrenched problems with fresh method, not recycled frameworks.',
-  },
-  {
-    title: 'Human-Centred',
-    description:
-      'Every study and program is built around the people it is meant to serve.',
-  },
-  {
-    title: 'Cultural Intelligence',
-    description:
-      'We work across borders with genuine fluency in the norms and expectations of each institution.',
-  },
-  {
-    title: 'Transdisciplinary',
-    description:
-      'We draw on economics, policy, anthropology and organizational design in equal measure.',
-  },
-]
 
 export const companyStory = [
   {
@@ -87,7 +65,7 @@ export const audiences = [
 ]
 
 export const contactInfo = {
-  email: 'contact@pryniapartners.com',
-  phone: '+216 00 000 000',
+  email: 'contact@prynia.com',
+  phone: '+216 22 012 989',
   address: 'Tunis, Tunisia',
 }

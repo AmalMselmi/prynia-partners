@@ -59,13 +59,20 @@ body {
 /* Shared utility classes used across sections */
 .eyebrow {
   font-family: var(--font-mono);
-  font-weight: 600;
-  font-size: 0.75rem;
-  letter-spacing: 0.16em;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-gold);
 }
 
+[dir='rtl'] .eyebrow {
+  font-family: "Cairo", "Open Sans", Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
 .container-prynia {
   width: 100%;
   max-width: 80rem;
@@ -84,4 +91,11 @@ body {
 
 .hairline {
   border-color: rgba(16, 27, 38, 0.12);
+}
+
+[dir='rtl'] {
+  font-family: "Cairo", "Open Sans", Arial, sans-serif;
+}
+[dir='rtl'] .font-display {
+  font-family: "Cairo", "Archivo Black", sans-serif;
 }

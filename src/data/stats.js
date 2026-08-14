@@ -6,23 +6,23 @@
  */
 export const stats = [
   {
-    value: 12,
+    value: 2,
     suffix: '+',
-    label: 'Countries Engaged',
+    label: 'Cultural advisory',
   },
   {
-    value: 40,
+    value: 202,
     suffix: '+',
-    label: 'Institutional Partners',
+    label: 'Training hours',
+  },
+  {
+    value: 4,
+    suffix: '+',
+    label: 'Engagement programs',
   },
   {
     value: 25,
     suffix: '+',
-    label: 'Advisory Studies Delivered',
-  },
-  {
-    value: 95,
-    suffix: '%',
-    label: 'Partner Satisfaction',
+    label: 'Partners',
   },
 ]

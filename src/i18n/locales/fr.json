@@ -1,0 +1,188 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "contact": "Contact",
+    "cta": "D\u00e9marrer une conversation"
+  },
+  "hero": {
+    "eyebrow": "Conseil · Leadership · Engagement",
+    "title": "Cultiver la prosp\u00e9rit\u00e9 gr\u00e2ce \u00e0 l'Intelligence Culturelle (CQ\u00ae)",
+    "body": "Prynia Partners guide les institutions et les individus \u00e0 travers le conseil culturel, la formation au leadership et l'engagement international. Que vous \u00e9voluiez dans un environnement diversifi\u00e9, une transition internationale ou une transformation syst\u00e9mique, nous pouvons vous aider.",
+    "ctaPrimary": "D\u00e9marrer une conversation",
+    "ctaSecondary": "D\u00e9couvrir nos services"
+  },
+
+    "meetTheTeam": {
+    "eyebrow": "Direction",
+    "title": "Les personnes derri\u00e8re Prynia Partners."
+    },
+
+  "team": {
+  "ceo": {
+    "name": "Narjess Hachena",
+    "role": "Cofondatrice et Consultante",
+    "description": "Narjess Hachena est cofondatrice de Prynia Partners et consultante en communication interculturelle, forte de plus de 11 ans d'expérience internationale dans la diplomatie publique, l'éducation, la culture, le développement de programmes et l'autonomisation économique. Elle a conçu de nombreuses initiatives financées par des bailleurs internationaux, géré des projets de subvention à six chiffres, et conseillé des institutions et professionnels à l'international en matière de stratégie, d'innovation et de prospérité. En tant que facilitatrice et formatrice certifiée CQ®, Narjess aide les organisations et les individus à traverser les transitions, à gagner en efficacité et à stimuler l'innovation grâce à l'intelligence culturelle."
+  },
+  "members": [
+    {
+      "name": "Hind Houas",
+      "role": "Consultante Principale",
+      "description": "Hind Houas est Consultante Principale chez Prynia Partners, avec plus de 14 ans d'expérience internationale en développement organisationnel, planification stratégique, gouvernance, éducation et engagement des parties prenantes. Hind a dirigé des initiatives complexes de plusieurs millions de dollars financées par des bailleurs internationaux et conseillé des gouvernements, universités, ONG et organisations du secteur privé en matière de stratégie, de renforcement institutionnel et de croissance durable. S'appuyant à la fois sur un leadership exécutif et une expertise académique, Hind aide ses clients à naviguer dans la complexité, à renforcer leurs capacités organisationnelles et à concevoir des solutions concrètes fondées sur des données probantes, avec un impact durable."
+    }
+  ]
+},
+  "whyChoose": {
+    "eyebrow": "Pourquoi Prynia",
+    "title": "Un conseil sur lequel les institutions peuvent s'appuyer.",
+    "reasons": [
+      "1\u00e8re et seule certification CQ\u00ae en Afrique; 2\u00e8me au MENA et dans le CCG",
+      "Consultants, formateurs et facilitateurs sont des professionnels chevronn\u00e9s dont l'expertise s'appuie sur une exp\u00e9rience v\u00e9cue",
+      "Une approche centr\u00e9e sur l'humain dans tous nos services",
+      "Des paiements bas\u00e9s sur les r\u00e9sultats !"
+    ]
+  },
+  "growthStats": {
+    "eyebrow": "Notre Impact, mesuré",
+    "description": "Un aperçu de notre impact jusqu'à présent.",
+    "labels": [
+      "Conseil culturel",
+      "Heures de formation",
+      "Programmes d'engagement",
+      "Partenaires"
+    ]
+  },
+
+  "cta": {
+    "eyebrow": "Pr\u00eats quand vous l'\u00eates",
+    "title": "Voyons comment l'intelligence culturelle peut vous aider à atteindre vos objectifs.",
+    "button": "D\u00e9marrer une conversation",
+    "notSureTitle": "Vous ne savez pas quel service vous faut ?",
+    "notSureButton": "Planifiez un appel de découverte"
+  },
+  "services": {
+    "eyebrow": "Ce Que Nous Faisons",
+    "title": "Services",
+    "description": [
+      "Trois services. Un seul objectif.",
+      "Conseil. Formation. Engagement.",
+      "Gr\u00e2ce \u00e0 l'Intelligence Culturelle, nos solutions vous aident \u00e0 naviguer dans la complexit\u00e9, \u00e0 renforcer les relations et \u00e0 cr\u00e9er un impact significatif. \u00catre efficace est important. S'\u00e9panouir est transformateur."
+    ],
+    "list": [
+      {
+        "title": "Conseil Culturel",
+        "description": "Nous aidons les individus et les organisations \u00e0 agir avec confiance gr\u00e2ce \u00e0 :",
+        "items": [
+          "Des d\u00e9briefings d'experts pour les \u00e9valuations d'Intelligence Culturelle (CQ\u00ae)",
+          "Plans d'action pour les personnes \u00e9voluant en contexte interculturel",
+          "Des services de consultation personnalis\u00e9s pour des projets d'engagement communautaire dans des contextes diversifi\u00e9s"
+        ],
+        "ctaLabel": "Discuter du Conseil Culturel"
+      },
+      {
+        "title": "Formations au Leadership",
+        "description": "Nos programmes de leadership sont con\u00e7us pour les dirigeants d'institutions op\u00e9rant \u00e0 travers cultures et syst\u00e8mes, d\u00e9veloppant le jugement et la communication n\u00e9cessaires pour diriger dans l'incertitude. C'est votre facteur diff\u00e9renciant \u00e0 l'\u00e8re de l'IA.",
+        "items": [
+          "Développer votre intelligence culturelle (CQ\u00ae)",
+          "Faire des affaires avec l'intelligence culturelle",
+          "Le prompting IA avec l'intelligence culturelle",
+          "L'ESG à travers l'intelligence culturelle",
+          "Diriger avec l'intelligence culturelle",
+          "Faire de la diplomatie avec l'intelligence culturelle",
+          "Communiquer avec l'intelligence culturelle",
+          "L'anglais avec l'intelligence culturelle",
+          "Enseigner avec l'intelligence culturelle",
+          "Étudier à l'étranger avec l'intelligence culturelle"
+],
+        "ctaLabel": "D\u00e9couvrir les Formations"
+      },
+      {
+        "title": "Engagement International",
+        "description": "Nous concevons, facilitons et livrons des programmes d'engagement qui alignent organisations et communaut\u00e9s autour d'une direction strat\u00e9gique commune. S\u00e9ries d'ateliers, Interventions (conférences, présentations) et tourn\u00e9es de conf\u00e9rences font partie des exemples que nous avons d\u00e9j\u00e0 livr\u00e9s.",
+        "items": [],
+        "ctaLabel": "Planifier un Programme d'Engagement"
+      }
+    ]
+  },
+  "requestSession": {
+    "eyebrow": "Individuel",
+    "title": "Demandez une session avec notre \u00e9quipe.",
+    "description": "Vous pr\u00e9f\u00e9rez un \u00e9change direct ? Parlez-nous de votre institution et de ce sur quoi vous souhaitez vous concentrer, et nous programmerons une session avec le bon membre de notre \u00e9quipe.",
+    "form": {
+      "name": "Nom",
+      "organization": "Organisation",
+      "email": "E-mail",
+      "focusArea": "Domaine d'int\u00e9r\u00eat",
+      "focusPlaceholder": "S\u00e9lectionnez un domaine",
+      "focusOptions": ["\u00c9tudes consultatives", "Formations au leadership", "Programmes d'engagement strat\u00e9gique", "Pas encore certain"],
+      "notes": "Notes suppl\u00e9mentaires (optionnel)",
+      "submit": "Demander une session",
+      "sending": "Envoi en cours\u2026",
+      "successTitle": "Demande re\u00e7ue.",
+      "successBody": "Merci d'avoir demand\u00e9 une session individuelle. Un membre de notre \u00e9quipe vous contactera pour confirmer un horaire.",
+      "sendAnother": "Soumettre une autre demande"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contactez-nous",
+    "title": "D\u00e9marrez une conversation ou r\u00e9servez un appel d\u00e9couverte avec Prynia Partners.",
+    "description": "Parlez-nous de votre institution et de vos objectifs. Un membre de notre \u00e9quipe vous r\u00e9pondra sous 48 heures.",
+    "form": {
+      "name": "Nom et Prénom",
+      "organization": "Organisation",
+      "email": "E-mail",
+      "country": "Pays",
+      "message": "Message",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours\u2026",
+      "successTitle": "Message re\u00e7u.",
+      "successBody": "Merci d'avoir contact\u00e9 Prynia Partners. Un membre de notre \u00e9quipe vous r\u00e9pondra sous peu.",
+      "sendAnother": "Envoyer un autre message"
+    },
+    "direct": {
+      "heading": "Contact Direct",
+      "email": "E-mail",
+      "phone": "T\u00e9l\u00e9phone",
+      "office": "Bureau"
+    },
+    "discoveryCall": {
+      "heading": "Vous pr\u00e9f\u00e9rez un appel ?",
+      "description": "Demandez un appel d\u00e9couverte et un membre de notre \u00e9quipe vous contactera pour programmer un horaire qui vous convient.",
+      "form": {
+        "name": "Nom et Prénom",
+        "organization": "Organisation",
+        "email": "E-mail",
+        "language": "Langue pr\u00e9f\u00e9r\u00e9e",
+        "languagePlaceholder": "S\u00e9lectionnez une langue",
+        "languageOptions": ["English", "Fran\u00e7ais", "\u0627\u0644\u0639\u0631\u0628\u064a\u0629"],
+        "validation": {
+          "name": "Veuillez entrer votre nom",
+          "organization": "Veuillez entrer votre organisation",
+          "emailRequired": "Veuillez entrer votre adresse e-mail",
+          "emailInvalid": "Veuillez entrer une adresse e-mail valide",
+          "language": "Veuillez sélectionner une langue préférée"
+        },
+        "topic": "Sujet",
+        "topicPlaceholder": "De quoi souhaitez-vous discuter ?",
+        "submit": "Demander un appel d\u00e9couverte",
+        "sending": "Envoi en cours\u2026",
+        "successTitle": "Appel demand\u00e9.",
+        "successBody": "Merci \u2014 un membre de notre \u00e9quipe vous contactera pour programmer votre appel d\u00e9couverte.",
+        "sendAnother": "Demander un autre appel"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Cultiver la prosp\u00e9rit\u00e9 gr\u00e2ce au conseil culturel, aux formations au leadership et \u00e0 l'engagement international.",
+    "navigation": "Navigation",
+    "services": "Services",
+    "contact": "Contact",
+    "copyright": "Tous droits r\u00e9serv\u00e9s."
+  },
+  "notFound": {
+    "eyebrow": "Erreur 404",
+    "title": "Cette page n'existe pas encore.",
+    "body": "La page que vous recherchez n'existe pas ou a \u00e9t\u00e9 d\u00e9plac\u00e9e. Revenons sur la bonne voie.",
+    "button": "Retour \u00e0 l'accueil"
+  }
+}

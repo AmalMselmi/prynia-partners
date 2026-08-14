@@ -4,6 +4,8 @@ import SectionHeading from '../ui/SectionHeading'
 import GrowthRings from '../ui/GrowthRings'
 import { stats } from '../../data/stats'
 import { useCountUp } from '../../hooks/useCountUp'
+import { useTranslation } from 'react-i18next'
+
 
 function StatItem({ stat, index, start }) {
   const count = useCountUp(stat.value, start, 1200 + index * 150)
@@ -32,6 +34,8 @@ function StatItem({ stat, index, start }) {
  */
 export default function GrowthStats() {
   const [start, setStart] = useState(false)
+  const { t } = useTranslation()
+
 
   return (
     <section className="relative overflow-hidden bg-ink py-24 md:py-32">
@@ -45,16 +49,15 @@ export default function GrowthStats() {
         className="container-prynia relative"
       >
         <SectionHeading
-          eyebrow="Our Impact"
-          title="Prosperity, measured."
-          description="A snapshot of the institutions and programs Prynia Partners has supported."
+          eyebrow={t('growthStats.eyebrow')}
+          description={t('growthStats.description')}
           className="[&_h2]:text-paper [&_p]:text-paper/60"
         />
 
         <div className="mt-14 grid grid-cols-2 gap-8 md:grid-cols-4">
           {stats.map((stat, i) => (
-            <StatItem key={stat.label} stat={stat} index={i} start={start} />
-          ))}
+            <StatItem key={stat.label} stat={{ ...stat, label: t(`growthStats.labels.${i}`) }} index={i} start={start} />
+            ))}
         </div>
       </motion.div>
     </section>

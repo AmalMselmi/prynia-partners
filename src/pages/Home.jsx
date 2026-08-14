@@ -1,21 +1,28 @@
 import Hero from '../components/sections/Hero'
-import AboutPreview from '../components/sections/AboutPreview'
-import ServicesPreview from '../components/sections/ServicesPreview'
 import WhyChoose from '../components/sections/WhyChoose'
+import MeetTheTeam from '../components/sections/MeetTheTeam'
 import CTASection from '../components/sections/CTASection'
 import GrowthStats from '../components/sections/GrowthStats'
-import Testimonials from '../components/sections/Testimonials'
+import GalleryCarousel from '../components/sections/GalleryCarousel'
+import { useTranslation } from 'react-i18next'
 
 export default function Home() {
+
+  const { t } = useTranslation()
   return (
     <>
-      <Hero />
-      <AboutPreview />
-      <ServicesPreview />
-      <GrowthStats />
-      <WhyChoose />
-      <Testimonials />
-      <CTASection />
+    <Hero />
+    <GalleryCarousel />
+    <WhyChoose />
+    <GrowthStats />
+    <MeetTheTeam />
+    <CTASection spacing="tight-bottom" />
+    <CTASection 
+    title={t('cta.notSureTitle')}
+    buttonLabel={t('cta.notSureButton')}
+    spacing="tight-top"
+/>
+  
     </>
   )
 }

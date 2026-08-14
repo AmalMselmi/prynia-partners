@@ -4,13 +4,15 @@ import { X } from 'lucide-react'
 import { navLinks } from '../../data/navigation'
 import { cn } from '../../utils/cn'
 import Button from '../ui/Button'
-import logo from '../../assets/prynia_logo.png'
+import { useTranslation } from 'react-i18next'
+import logo from '../../assets/prynia_light.png'
 /**
  * MobileMenu — full-screen overlay used below the md breakpoint.
  * Shares the navLinks data source with Navbar so link edits only
  * ever happen in one place.
  */
 export default function MobileMenu({ open, onClose }) {
+  const { t } = useTranslation()
   return (
     <AnimatePresence>
       {open && (
@@ -63,17 +65,12 @@ export default function MobileMenu({ open, onClose }) {
                     )
                   }
                 >
-                  {link.label}
-                </NavLink>
+                  {t(`nav.${link.key}`)}                
+                  </NavLink>
               </motion.li>
             ))}
           </motion.ul>
-
-          <div className="container-prynia mt-10">
-            <Button to="/contact" variant="gold" onClick={onClose} showArrow={false}>
-              Start a Conversation
-            </Button>
-          </div>
+          
         </motion.div>
       )}
     </AnimatePresence>

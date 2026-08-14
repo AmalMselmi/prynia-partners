@@ -2,12 +2,11 @@ import { motion } from 'framer-motion'
 import Button from './Button'
 
 /**
- * ServiceCard — flat, bordered block (no shadow, no rounded-xl) in
- * keeping with the minimal/premium/editorial direction. The icon
- * sits inside a hairline square rather than a filled colour chip,
- * so the card reads as restrained rather than "app feature tile."
+ * ServiceCard — icon comes from the `service` object (data/services.js),
+ * all text comes from translated props passed in by whatever page
+ * renders this card, so the same component works for any language.
  */
-export default function ServiceCard({ service, index = 0 }) {
+export default function ServiceCard({ service, title, description, items, ctaLabel, index = 0 }) {
   const Icon = service.icon
 
   return (
@@ -18,16 +17,24 @@ export default function ServiceCard({ service, index = 0 }) {
       transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.1 }}
       className="flex flex-col gap-5 border border-ink/12 bg-white/40 p-8 md:p-10"
     >
-      <div className="flex h-12 w-12 items-center justify-center border border-ink/20 text-ink">
-        <Icon size={22} strokeWidth={1.5} aria-hidden="true" />
+      <div className="flex h-16 w-16 items-center justify-center border border-ink/20 text-ink">
+        <Icon size={30} strokeWidth={1.5} aria-hidden="true" />
       </div>
-      <h3 className="font-display text-2xl text-ink">{service.title}</h3>
-      <p className="text-slate leading-relaxed">
-        {service.description || service.shortDescription}
-      </p>
+      <h3 className="font-display text-2xl text-ink">{title}</h3>
+      <p className="text-slate leading-relaxed">{description}</p>
+      {items && items.length > 0 && (
+        <ul className="flex flex-col gap-2">
+          {items.map((item) => (
+            <li key={item} className="flex items-start gap-2 text-sm text-slate leading-relaxed">
+              <span className="mt-2 h-1 w-1 shrink-0 bg-gold" aria-hidden="true" />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      )}
       <div className="mt-auto pt-2">
-        <Button to="/contact" variant="ghost" className="!px-0 !py-0">
-          {service.ctaLabel || 'Learn more'}
+        <Button to="/contact" variant="ghost" className="!px-0 !py-0 font-bold text-base">
+          {ctaLabel}
         </Button>
       </div>
     </motion.article>

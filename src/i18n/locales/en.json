@@ -1,0 +1,187 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact",
+    "cta": "Start a Conversation"
+  },
+  "hero": {
+    "eyebrow": "Advisory · Leadership · Engagement",
+    "title": "Growing Prosperity through Cultural Intelligence (CQ\u00ae)",
+    "body": "Prynia Partners guides institutions and individuals through cultural advisory, leadership training, and international engagement. Whether you are working in a diverse setting, experiencing an international transition, or navigating a system transformation, we can help you.",
+    "ctaPrimary": "Start a Conversation",
+    "ctaSecondary": "Explore Our Services"
+  },
+
+  "whyChoose": {
+    "eyebrow": "Why Prynia",
+    "reasons": [
+      "1st and only CQ\u00ae certified in Africa; 2nd in MENA and GCC",
+      "Consultants, trainers and facilitators are seasoned professionals with lived experience amplifying their expertise",
+      "Approach is human-centred across our services",
+      "Payments are results-based!"
+    ]
+  },
+  "growthStats": {
+    "eyebrow": "Our Impact, measured",
+    "description": "A snapshot of our impact so far",
+    "labels": [
+      "Cultural advisory",
+      "Training hours",
+      "Engagement programs",
+      "Partners"
+    ]
+  },
+  "meetTheTeam": {
+    "eyebrow": "Leadership",
+    "title": "The people behind Prynia Partners."
+    },
+  
+    "team": {
+  "ceo": {
+    "name": "Narjess Hachena",
+    "role": "Co-Founder & Consultant",
+    "description": "Narjess Hachena is Co-Founder of Prynia Partners and intercultural communication consultant with 11+ years of international experience in public diplomacy, education, culture, program development and economic empowerment. She has designed multiple initiatives funded by international donors, managed six-figure grant projects, and advised institutions and professionals internationally on strategy, innovation and prosperity. As a CQ® Certified Facilitator and Educator, Narjess helps organizations and individuals navigate transitions, increase effectiveness, and drive innovation through cultural intelligence."
+  },
+  "members": [
+    {
+      "name": "Hind Houas",
+      "role": "Principal Consultant",
+      "description": "Hind Houas is Principal Consultant at Prynia Partners, bringing over 14 years of international experience in organizational development, strategic planning, governance, education, and stakeholder engagement. Hind has led complex, multimillion-dollar initiatives funded by international donors and advised governments, universities, NGOs, and private sector organizations on strategy, institutional strengthening, and sustainable growth. Drawing on both executive leadership and academic expertise, Hind helps clients navigate complexity, build organizational capacity, and design practical, evidence-based solutions that deliver lasting impact."
+    }
+  ]
+},
+  "cta": {
+    "eyebrow": "Ready When You Are",
+    "title": "Let’s discuss how Cultural Intelligence can help you reach your goals.",
+    "button": "Start a Conversation",
+    "notSureTitle": "Not sure which service you need?",
+    "notSureButton": "Book a Discovery Call"
+  },
+  "services": {
+    "eyebrow": "What We Do",
+    "title": "Services",
+    "description": [
+      "Three Services. One Purpose.",
+      "Advisory. Training. Engagement.",
+      "Powered by Cultural Intelligence, our solutions help you navigate complexity, strengthen relationships, and create meaningful impact. Being effective is important. Thriving is transformational."
+    ],
+    "list": [
+      {
+        "title": "Cultural Advisory",
+        "description": "We help individuals and organizations act with confidence through:",
+        "items": [
+          "Expert debriefs for Cultural Intelligence (CQ\u00ae) assessments",
+          "Action plans for individuals operating in intercultural environments",
+          "Customized consultation services for community engagement projects operating in diverse settings or systems"
+        ],
+        "ctaLabel": "Discuss Cultural Advisory"
+      },
+      {
+        "title": "Leadership Trainings",
+        "description": "Our leadership programs are designed for institutional leaders operating across cultures and systems, building the judgment and communication needed to lead through uncertainty. This is your differentiator in the age of AI.",
+        "items": [
+          "Developing your Cultural Intelligence (CQ\u00ae)",
+          "Doing business with Cultural Intelligence",
+          "AI prompting with Cultural Intelligence",
+          "ESG through Cultural Intelligence",
+          "Leading with Cultural Intelligence",
+          "Doing diplomacy with Cultural Intelligence",
+          "Communicating with Cultural Intelligence",
+          "English with Cultural Intelligence",
+          "Teaching with Cultural Intelligence",
+          "Study abroad with Cultural Intelligence"
+],
+        "ctaLabel": "Explore Leadership Training"
+      },
+      {
+        "title": "International Engagement",
+        "description": "We design, facilitate and deliver engagement programs that align organizations and communities around a shared strategic direction. Workshop series, speaking engagements and book tours are among the few examples we\u2019ve previously delivered.",
+        "items": [],
+        "ctaLabel": "Plan an Engagement Program"
+      }
+    ]
+  },
+  "requestSession": {
+    "eyebrow": "One-on-One",
+    "title": "Request a session with our team.",
+    "description": "Prefer a direct conversation? Tell us a bit about your institution and what you'd like to focus on, and we'll schedule a one-on-one session with the right member of our team.",
+    "form": {
+      "name": "Full Name",
+      "organization": "Organization",
+      "email": "Email",
+      "focusArea": "Focus Area",
+      "focusPlaceholder": "Select a focus area",
+      "focusOptions": ["Advisory Studies", "Leadership Trainings", "Strategic Engagement Programs", "Not sure yet"],
+      "notes": "Additional Notes (optional)",
+      "submit": "Request Session",
+      "sending": "Sending\u2026",
+      "successTitle": "Request received.",
+      "successBody": "Thank you for requesting a one-on-one session. A member of our team will reach out to confirm a time.",
+      "sendAnother": "Submit another request"
+    }
+  },
+  "contact": {
+    "eyebrow": "Get in Touch",
+    "title": "Start a conversation or book a discovery call with Prynia Partners.",
+    "description": "Tell us about your institution and what you're hoping to achieve. A member of our team will respond within 48 hours.",
+    "form": {
+      "name": "Full Name",
+      "organization": "Organization",
+      "email": "Email",
+      "country": "Country",
+      "message": "Message",
+      "submit": "Send Message",
+      "sending": "Sending\u2026",
+      "successTitle": "Message received.",
+      "successBody": "Thank you for reaching out to Prynia Partners. A member of our team will respond shortly.",
+      "sendAnother": "Send another message"
+    },
+    "direct": {
+      "heading": "Direct Contact",
+      "email": "Email",
+      "phone": "Phone",
+      "office": "Office"
+    },
+    "discoveryCall": {
+      "heading": "Prefer a call?",
+      "description": "Request a discovery call and a member of our team will reach out to schedule a time that works for you.",
+      "form": {
+        "name": "Full Name",
+        "organization": "Organization",
+        "email": "Email",
+        "language": "Preferred Language",
+        "languagePlaceholder": "Select a language",
+        "languageOptions": ["English", "Fran\u00e7ais", "\u0627\u0644\u0639\u0631\u0628\u064a\u0629"],
+        "validation": {
+          "name": "Please enter your name",
+          "organization": "Please enter your organization",
+          "emailRequired": "Please enter your email",
+          "emailInvalid": "Please enter a valid email address",
+          "language": "Please select your preferred language"
+        },
+        "topic": "Topic",
+        "topicPlaceholder": "What would you like to discuss?",
+        "submit": "Request Discovery Call",
+        "sending": "Sending\u2026",
+        "successTitle": "Call requested.",
+        "successBody": "Thank you \u2014 a member of our team will reach out to schedule your discovery call.",
+        "sendAnother": "Request another call"
+      }
+
+    }
+  },
+  "footer": {
+    "tagline": "Growing Prosperity through cultural advisory, leadership trainings, and international engagement.",
+    "navigation": "Navigation",
+    "services": "Services",
+    "contact": "Contact",
+    "copyright": "All rights reserved."
+  },
+  "notFound": {
+    "eyebrow": "Error 404",
+    "title": "This page hasn't taken root yet.",
+    "body": "The page you're looking for doesn't exist, or has moved. Let's get you back to solid ground.",
+    "button": "Return Home"
+  }
+}
