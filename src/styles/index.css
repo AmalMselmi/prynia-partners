@@ -65,7 +65,9 @@ body {
   text-transform: uppercase;
   color: var(--color-gold);
 }
-
+[dir='rtl'] .services-button {
+  font-size: 1.1rem;
+}
 [dir='rtl'] .eyebrow {
   font-family: "Cairo", "Open Sans", Arial, sans-serif;
   font-size: 1.3rem;
