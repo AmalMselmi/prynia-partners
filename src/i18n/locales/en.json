@@ -166,8 +166,10 @@
         "sending": "Sending\u2026",
         "successTitle": "Call requested.",
         "successBody": "Thank you \u2014 a member of our team will reach out to schedule your discovery call.",
-        "sendAnother": "Request another call"
+        "sendAnother": "Request another call",
+        "chooseTime": "Choose Your Preferred Time"
       }
+      
 
     }
   },

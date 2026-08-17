@@ -27,11 +27,13 @@ export default function Contact() {
           <h2 className="font-display text-3xl text-ink">{t('contact.discoveryCall.heading')}</h2>
           <p className="mt-3 text-slate leading-relaxed">
             {t('contact.discoveryCall.description')}
+            
           </p>
-          <div className="mt-10">
+          <div className="mt-10 flex flex-col gap-6">
             <DiscoveryCallForm />
-          </div>
+            </div>
         </div>
+        
       </section>
     </>
   )

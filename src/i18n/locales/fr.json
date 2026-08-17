@@ -168,7 +168,8 @@
         "sending": "Envoi en cours\u2026",
         "successTitle": "Appel demand\u00e9.",
         "successBody": "Merci \u2014 un membre de notre \u00e9quipe vous contactera pour programmer votre appel d\u00e9couverte.",
-        "sendAnother": "Demander un autre appel"
+        "sendAnother": "Demander un autre appel",
+        "chooseTime": "Choisissez votre horaire préféré"
       }
     }
   },

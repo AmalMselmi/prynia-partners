@@ -3,12 +3,16 @@ import { useForm } from 'react-hook-form'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { cn } from '../../utils/cn'
+import { PopupWidget } from 'react-calendly'
+
+const CALENDLY_URL = 'https://calendly.com/mselmii-amal-uvi0/discovery-calls'
 
 const fieldBase =
   'w-full border border-ink/20 bg-white/60 px-4 py-3 text-sm text-ink placeholder:text-slate/60 focus-visible:outline-2 focus-visible:outline-gold transition-colors'
 
 export default function DiscoveryCallForm() {
   const { t } = useTranslation()
+  const [showCalendly, setShowCalendly] = useState(false)
   const [submitted, setSubmitted] = useState(false)
 
   const {
@@ -38,6 +42,7 @@ export default function DiscoveryCallForm() {
       }
 
       setSubmitted(true)
+      setShowCalendly(true)
       reset()
     } catch (error) {
       console.error('Discovery call error:', error)
@@ -45,31 +50,41 @@ export default function DiscoveryCallForm() {
   }
 
   if (submitted) {
-    return (
-      <motion.div
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: 'easeOut' }}
-        className="flex flex-col items-start gap-4 border border-gold/30 bg-emerald-soft px-8 py-10"
-        role="status"
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+      className="flex flex-col items-start gap-4 border border-gold/30 bg-emerald-soft px-8 py-10"
+      role="status"
+    >
+      <h3 className="font-display text-xl text-ink">
+        {t('contact.discoveryCall.form.successTitle')}
+      </h3>
+
+      <p className="max-w-xl text-sm leading-relaxed text-ink/70">
+        {t('contact.discoveryCall.form.successBody')}
+      </p>
+
+      <button
+        type="button"
+        onClick={() => setSubmitted(false)}
+        className="mt-2 font-body text-sm font-medium text-gold transition-colors hover:text-ink"
       >
-        <h3 className="font-display text-xl text-ink">
-          {t('contact.discoveryCall.form.successTitle')}
-        </h3>
+        {t('contact.discoveryCall.form.sendAnother')}
+      </button>
 
-        <p className="max-w-xl text-sm leading-relaxed text-ink/70">
-          {t('contact.discoveryCall.form.successBody')}
-        </p>
-
-        <button
-          type="button"
-          onClick={() => setSubmitted(false)}
-          className="mt-2 font-body text-sm font-medium text-gold transition-colors hover:text-ink">
-          {t('contact.discoveryCall.form.sendAnother')}        
-          </button>
-      </motion.div>
-    )
-  }
+      {showCalendly && (
+        <PopupWidget
+          url={CALENDLY_URL}
+          onModalClose={() => setShowCalendly(false)}
+          open={showCalendly}
+          rootElement={document.getElementById('root')}
+        />
+      )}
+    </motion.div>
+  )
+}
 
   return (
     <form
