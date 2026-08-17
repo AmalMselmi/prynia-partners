@@ -17,7 +17,6 @@ export default function MeetTheTeam() {
         <SectionHeading
           eyebrow={t('meetTheTeam.eyebrow')}
           title={t('meetTheTeam.title')}
-          description={t('meetTheTeam.description')}
         />
 
         <div className="mt-14">

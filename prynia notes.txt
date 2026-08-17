@@ -2,3 +2,5 @@ backend: cd server
          node index.js
 
 frontend: npm run dev
+
+https://prynia-partners.vercel.app/
