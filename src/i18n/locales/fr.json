@@ -161,6 +161,8 @@
         "topic": "Sujet",
         "topicPlaceholder": "De quoi souhaitez-vous discuter ?",
         "submit": "Réserver un appel d\u00e9couverte",
+        "choosePerson": "Choisissez la personne avec qui vous souhaitez échanger :",
+        "bookWith": "Réserver avec {{name}}",
         "sending": "Envoi en cours\u2026",
         "successTitle": "Appel réservé.",
         "successBody": "Merci \u2014 un membre de notre \u00e9quipe vous contactera pour programmer votre appel d\u00e9couverte.",

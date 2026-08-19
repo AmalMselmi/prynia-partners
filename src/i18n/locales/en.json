@@ -160,6 +160,8 @@
         "topic": "Topic",
         "topicPlaceholder": "What would you like to discuss?",
         "submit": "Book a Discovery Call",
+        "choosePerson": "Choose who you'd like to speak with:",
+        "bookWith": "Book with {{name}}",
         "sending": "Sending\u2026",
         "successTitle": "Call booked.",
         "successBody": "Thank you \u2014 a member of our team will reach out to schedule your discovery call.",
