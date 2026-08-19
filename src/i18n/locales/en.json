@@ -2,7 +2,7 @@
   "nav": {
     "home": "Home",
     "services": "Services",
-    "contact": "Contact",
+    "contact": "Contact Us",
     "cta": "Start a Conversation"
   },
   "hero": {
@@ -176,7 +176,7 @@
     "tagline": "Growing Prosperity through cultural advisory, leadership trainings, and international engagement.",
     "navigation": "Navigation",
     "services": "Services",
-    "contact": "Contact",
+    "contact": "Contact Us",
     "copyright": "All rights reserved."
   },
   "notFound": {
