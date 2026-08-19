@@ -1,5 +1,5 @@
-import ceoPhotoImg from '../assets/Narjess_hachena.png'
-import consultantPhoto from '../assets/Hind_houas.png'
+import ceoPhotoImg from '../assets/narjess.jpg'
+import consultantPhoto from '../assets/hind.png'
 
 /**
  * Team photos only — name/role/description now live in the translation

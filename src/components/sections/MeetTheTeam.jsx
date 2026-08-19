@@ -12,7 +12,7 @@ export default function MeetTheTeam() {
   const team = membersText.map((member, i) => ({ ...member, photo: teamPhotos[i] }))
 
   return (
-    <section className="bg-paper-dim/60 py-24 md:py-32">
+    <section className="bg-paper-dim/60 py-14 md:py-20">
       <div className="container-prynia">
         <SectionHeading
           eyebrow={t('meetTheTeam.eyebrow')}

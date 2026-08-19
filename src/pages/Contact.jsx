@@ -14,7 +14,7 @@ export default function Contact() {
         description={t('contact.description')}
       />
 
-      <section className="bg-paper py-24 md:py-32">
+      <section className="bg-paper py-14 md:py-16">
         <div className="container-prynia grid grid-cols-1 gap-16 md:grid-cols-12">
           <div className="md:col-span-7">
             <ContactForm />
@@ -22,7 +22,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="bg-paper-dim/60 py-24 md:py-32">
+      <section className="bg-paper-dim/60 py-14 md:py-16">
         <div className="container-prynia max-w-2xl">
           <h2 className="font-display text-3xl text-ink">{t('contact.discoveryCall.heading')}</h2>
           <p className="mt-3 text-slate leading-relaxed">

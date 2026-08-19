@@ -16,13 +16,7 @@ export default function Home() {
     <WhyChoose />
     <GrowthStats />
     <MeetTheTeam />
-    <CTASection spacing="tight-bottom" />
-    <CTASection 
-    title={t('cta.notSureTitle')}
-    buttonLabel={t('cta.notSureButton')}
-    spacing="tight-top"
-/>
-  
+    <CTASection/>
     </>
   )
 }

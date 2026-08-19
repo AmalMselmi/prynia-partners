@@ -56,7 +56,8 @@
   "cta": {
     "eyebrow": "Pr\u00eats quand vous l'\u00eates",
     "title": "Voyons comment l'intelligence culturelle peut vous aider à atteindre vos objectifs.",
-    "button": "D\u00e9marrer une conversation",
+    "button": "D\u00e9marrer une conversation"},
+  "notsure": {
     "notSureTitle": "Vous ne savez pas quel service vous faut ?",
     "notSureButton": "Planifiez un appel de découverte"
   },
@@ -139,12 +140,7 @@
       "successBody": "Merci d'avoir contact\u00e9 Prynia Partners. Un membre de notre \u00e9quipe vous r\u00e9pondra sous peu.",
       "sendAnother": "Envoyer un autre message"
     },
-    "direct": {
-      "heading": "Contact Direct",
-      "email": "E-mail",
-      "phone": "T\u00e9l\u00e9phone",
-      "office": "Bureau"
-    },
+
     "discoveryCall": {
       "heading": "Vous pr\u00e9f\u00e9rez un appel ?",
       "description": "Demandez un appel d\u00e9couverte et un membre de notre \u00e9quipe vous contactera pour programmer un horaire qui vous convient.",
@@ -164,11 +160,11 @@
         },
         "topic": "Sujet",
         "topicPlaceholder": "De quoi souhaitez-vous discuter ?",
-        "submit": "Demander un appel d\u00e9couverte",
+        "submit": "Réserver un appel d\u00e9couverte",
         "sending": "Envoi en cours\u2026",
-        "successTitle": "Appel demand\u00e9.",
+        "successTitle": "Appel réservé.",
         "successBody": "Merci \u2014 un membre de notre \u00e9quipe vous contactera pour programmer votre appel d\u00e9couverte.",
-        "sendAnother": "Demander un autre appel",
+        "sendAnother": "Réserver un autre appel",
         "chooseTime": "Choisissez votre horaire préféré"
       }
     }

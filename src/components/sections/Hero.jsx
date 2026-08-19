@@ -25,7 +25,7 @@ export default function Hero() {
         className="pointer-events-none absolute -bottom-24 -left-16 h-[28rem] w-[28rem] text-paper/[0.07] md:h-[36rem] md:w-[36rem]"
         strokeWidth={1}
       />
-<div className="container-prynia relative flex flex-col justify-center py-10 md:py-16 lg:grid lg:grid-cols-[0.85fr_1.15fr] lg:gap-14 rtl:lg:gap-6 lg:py-16">        <div >
+      <div className="container-prynia relative flex flex-col justify-center py-10 md:py-16 lg:grid lg:grid-cols-[0.85fr_1.15fr] lg:gap-14 rtl:lg:gap-6 lg:py-16">        <div >
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-            className="max-w-3xl font-body font-normal text-3xl leading-tight md:text-5xl rtl:text-4xl rtl:md:text-6xl"
+            className="max-w-xl font-display text-3xl leading-tight md:text-4xl rtl:text-3xl rtl:md:text-5xl"
           >
             {t('hero.title')}
           </motion.h1>
@@ -71,9 +71,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.4 }}
-          className="hidden w-full lg:block"
+          className="hidden lg:ml-auto lg:block lg:h-[26rem] lg:w-[75%] lg:py-4 rtl:lg:ml-0 rtl:lg:mr-auto"
         >
-          <ImageCarousel variant="dark" />
+          <ImageCarousel variant="dark" fill />
         </motion.div>
       </div>
     </section>

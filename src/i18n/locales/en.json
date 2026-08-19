@@ -23,8 +23,8 @@
     ]
   },
   "growthStats": {
-    "eyebrow": "Our Impact, measured",
-    "description": "A snapshot of our impact so far",
+    "eyebrow": "Our Impact",
+    "description": "A snapshot of our impact so far.",
     "labels": [
       "Cultural advisory",
       "Training hours",
@@ -54,7 +54,9 @@
   "cta": {
     "eyebrow": "Ready When You Are",
     "title": "Let’s discuss how Cultural Intelligence can help you reach your goals.",
-    "button": "Start a Conversation",
+    "button": "Start a Conversation"
+  },
+  "notsure": {
     "notSureTitle": "Not sure which service you need?",
     "notSureButton": "Book a Discovery Call"
   },
@@ -137,12 +139,7 @@
       "successBody": "Thank you for reaching out to Prynia Partners. A member of our team will respond shortly.",
       "sendAnother": "Send another message"
     },
-    "direct": {
-      "heading": "Direct Contact",
-      "email": "Email",
-      "phone": "Phone",
-      "office": "Office"
-    },
+
     "discoveryCall": {
       "heading": "Prefer a call?",
       "description": "Request a discovery call and a member of our team will reach out to schedule a time that works for you.",
@@ -162,11 +159,11 @@
         },
         "topic": "Topic",
         "topicPlaceholder": "What would you like to discuss?",
-        "submit": "Request Discovery Call",
+        "submit": "Book a Discovery Call",
         "sending": "Sending\u2026",
-        "successTitle": "Call requested.",
+        "successTitle": "Call booked.",
         "successBody": "Thank you \u2014 a member of our team will reach out to schedule your discovery call.",
-        "sendAnother": "Request another call",
+        "sendAnother": "Book another call",
         "chooseTime": "Choose Your Preferred Time"
       }
       

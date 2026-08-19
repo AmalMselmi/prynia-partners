@@ -38,7 +38,7 @@ export default function GrowthStats() {
 
 
   return (
-    <section className="relative overflow-hidden bg-ink py-24 md:py-32">
+    <section className="relative overflow-hidden bg-ink py-10 md:py-20">
       <GrowthRings
         className="pointer-events-none absolute -bottom-16 -right-16 h-72 w-72 text-paper/[0.05] md:h-96 md:w-96"
         strokeWidth={1}

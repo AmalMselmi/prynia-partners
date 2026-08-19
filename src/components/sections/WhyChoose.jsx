@@ -15,7 +15,7 @@ const reasonIcons = [Award, GraduationCap, HeartHandshake, DollarSign]
 export default function WhyChoose() {
   const { t } = useTranslation()
   return (
-    <section className="bg-paper py-24 md:py-32">
+    <section className="bg-paper py-10 md:py-20">
       <div className="container-prynia">
         <SectionHeading
         eyebrow={t('whyChoose.eyebrow')}
