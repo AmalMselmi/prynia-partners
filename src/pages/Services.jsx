@@ -14,9 +14,10 @@ export default function Services() {
         eyebrow={t('services.eyebrow')}
         title={t('services.title')}
         description={t('services.description', { returnObjects: true })}
+        align="center"
       />
 
-      <section className="bg-paper py-24 md:py-32">
+      <section className="bg-paper py-10 md:py-16">
         <div className="mx-auto grid max-w-8xl grid-cols-1 gap-6 px-6 md:grid-cols-3 lg:grid-cols-[1fr_1.1fr_1fr] lg:items-start lg:gap-6 lg:px-8">
           {services.map((service, i) => (
             <ServiceCard

@@ -101,3 +101,34 @@ body {
 [dir='rtl'] .font-display {
   font-family: "Cairo", "Archivo Black", sans-serif;
 }
+[dir='rtl'] .page-banner-description {
+  font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
+  [dir='ltr'] .page-banner-description,
+  [dir='rtl'] .page-banner-description {
+    max-width: none;
+    width: max-content;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  [dir='ltr'] .page-banner-description {
+  width: 60rem;
+  max-width: none;
+  margin-left: -8rem;
+  margin-right: auto;
+  white-space: normal;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+  [dir='rtl'] .page-banner-description {
+    font-size: 1.3rem;
+    left: 4rem;
+  }
+}
