@@ -116,7 +116,7 @@ export default function PageBanner({
                   <motion.p
                     key={i}
                     variants={revealUp}
-                    className={`font-display font-normal text-2xl leading-snug text-paper/90 md:text-3xl ${
+                    className={`font-body font-normal text-2xl leading-snug text-paper/90 md:text-3xl ${
                       centered ? 'mx-auto text-center' : ''
                     }`}
                   >

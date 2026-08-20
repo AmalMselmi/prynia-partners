@@ -12,7 +12,6 @@ export default function Services() {
     <>
       <PageBanner
         eyebrow={t('services.eyebrow')}
-        title={t('services.title')}
         description={t('services.description', { returnObjects: true })}
         align="center"
       />
