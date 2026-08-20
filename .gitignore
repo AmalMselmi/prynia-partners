@@ -4,3 +4,5 @@ dist-ssr
 *.local
 .DS_Store
 .env
+public/videos/prynia_video.mp4
+

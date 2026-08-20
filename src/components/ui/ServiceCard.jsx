@@ -6,7 +6,7 @@ import Button from './Button'
  * all text comes from translated props passed in by whatever page
  * renders this card, so the same component works for any language.
  */
-export default function ServiceCard({ service, title, description, items, ctaLabel, index = 0 }) {
+export default function ServiceCard({ service, title, description, items, ctaLabel, videoSrc,index = 0 }) {
   const Icon = service.icon
 
   return (
@@ -32,12 +32,25 @@ export default function ServiceCard({ service, title, description, items, ctaLab
           ))}
         </ul>
       )}
-      <div className="mt-auto pt-2">
-        <Button to="/contact" variant="ghost"   className="services-button !px-0 !py-0 !font-bold text-base"
->
-          {ctaLabel}
-        </Button>
-      </div>
+      <div className="pt-2">
+  <Button to="/contact" variant="ghost" className="!px-0 !py-0 !font-bold text-base">
+    {ctaLabel}
+  </Button>
+</div>
+
+{videoSrc && (
+  <div className="mt-6 overflow-hidden rounded-sm border border-ink/12 shadow-lg shadow-ink/10 lg:h-56 xl:h-64">
+    <video
+      src={videoSrc}
+      controls
+      preload="metadata"
+      playsInline
+      className="aspect-video w-full bg-ink object-cover lg:h-full"
+    >
+      Your browser does not support embedded video.
+    </video>
+  </div>
+)}
     </motion.article>
   )
 }

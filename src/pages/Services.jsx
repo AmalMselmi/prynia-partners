@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import PageBanner from '../components/ui/PageBanner'
 import ServiceCard from '../components/ui/ServiceCard'
 import { services } from '../data/services'
+import { serviceVideos } from '../data/serviceVideos'
 
 export default function Services() {
   const { t } = useTranslation()
@@ -16,7 +17,7 @@ export default function Services() {
       />
 
       <section className="bg-paper py-24 md:py-32">
-        <div className="container-prynia grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="mx-auto grid max-w-8xl grid-cols-1 gap-6 px-6 md:grid-cols-3 lg:grid-cols-[1fr_1.1fr_1fr] lg:items-start lg:gap-6 lg:px-8">
           {services.map((service, i) => (
             <ServiceCard
               key={service.slug}
@@ -25,6 +26,7 @@ export default function Services() {
               description={translatedList[i].description}
               items={translatedList[i].items}
               ctaLabel={translatedList[i].ctaLabel}
+              videoSrc={serviceVideos[i]}
               index={i}
             />
           ))}
