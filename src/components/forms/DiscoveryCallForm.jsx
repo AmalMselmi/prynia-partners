@@ -26,7 +26,7 @@ export default function DiscoveryCallForm() {
   const onSubmit = async (data) => {
     try {
       const response = await fetch(
-        'http://localhost:5000/api/discovery-call',
+        'https://api.prynia.com/api/discovery-call',
         {
           method: 'POST',
           headers: {

@@ -2,15 +2,23 @@ import express from 'express'
 import cors from 'cors'
 import nodemailer from 'nodemailer'
 import dotenv from 'dotenv'
+import { fileURLToPath } from 'url'
+import path from 'path'
 
-dotenv.config()
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
-const app = express()
-app.use(cors())
+dotenv.config({ path: path.join(__dirname, '.env') })
+
+app.use(cors({
+  origin: ['https://prynia.com', 'https://www.prynia.com'],
+}))
 app.use(express.json())
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host: 'ssl0.ovh.net', 
+  port: 465,
+  secure: true,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
@@ -67,4 +75,4 @@ app.post('/api/discovery-call', async (req, res) => {
 })
 
 const PORT = process.env.PORT || 5000
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`))
+app.listen(PORT, () => console.log(`Server running on port:${PORT}`))

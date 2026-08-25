@@ -4,3 +4,10 @@ backend: cd server
 frontend: npm run dev
 
 https://prynia-partners.vercel.app/
+
+Filezilla FTP:
+
+host: ftp.cluster131.hosting.ovh.net
+username: pryniat
+password:
+port: 21
