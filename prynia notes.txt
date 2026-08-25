@@ -9,5 +9,5 @@ Filezilla FTP:
 
 host: ftp.cluster131.hosting.ovh.net
 username: pryniat
-password:
+password:Pryniawebsite1
 port: 21
