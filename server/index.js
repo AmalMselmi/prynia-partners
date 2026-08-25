@@ -17,7 +17,7 @@ app.use(express.json())
 
 const transporter = nodemailer.createTransport({
   host: 'ssl0.ovh.net', 
-  port: 587,
+  port: 2525,
   secure: false,
   auth: {
     user: process.env.EMAIL_USER,
