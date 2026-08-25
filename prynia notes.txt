@@ -11,3 +11,9 @@ host: ftp.cluster131.hosting.ovh.net
 username: pryniat
 password:Pryniawebsite1
 port: 21
+
+https://prynia.com
+
+
+​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+
