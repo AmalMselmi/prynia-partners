@@ -1,29 +1,31 @@
 import express from 'express'
 import cors from 'cors'
-import nodemailer from 'nodemailer'
 import dotenv from 'dotenv'
 import { fileURLToPath } from 'url'
 import path from 'path'
+import { Resend } from 'resend'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 dotenv.config({ path: path.join(__dirname, '.env') })
+
 const app = express()
 app.use(cors({
   origin: ['https://prynia.com', 'https://www.prynia.com'],
 }))
 app.use(express.json())
 
-const transporter = nodemailer.createTransport({
-  host: 'ssl0.ovh.net',
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-})
+const resend = new Resend(process.env.RESEND_API_KEY)
+
+/**
+ * Sender address. While the domain is unverified on Resend, this
+ * MUST stay 'onboarding@resend.dev' and the recipient below is
+ * restricted to the email the Resend account was created with.
+ * Once prynia.com is verified in Resend's dashboard, swap this to
+ * something like 'Prynia Partners Website <contact@prynia.com>'.
+ */
+const FROM_ADDRESS = 'Prynia Partners Website <onboarding@resend.dev>'
 
 /**
  * POST /api/contact — general contact form submissions.
@@ -36,10 +38,10 @@ app.post('/api/contact', async (req, res) => {
   }
 
   try {
-    await transporter.sendMail({
-      from: `"Prynia Partners Website" <${process.env.EMAIL_USER}>`,
+    await resend.emails.send({
+      from: FROM_ADDRESS,
       to: process.env.EMAIL_USER,
-      replyTo: email,
+      reply_to: email,
       subject: `New Contact Form Submission — ${name}`,
       text: `Name: ${name}\nOrganization: ${organization}\nEmail: ${email}\nCountry: ${country}\n\nMessage:\n${message}`,
     })
@@ -55,15 +57,16 @@ app.post('/api/contact', async (req, res) => {
  */
 app.post('/api/discovery-call', async (req, res) => {
   const { name, organization, email, preferredDate, topic, language } = req.body
+
   if (!name || !email) {
     return res.status(400).json({ error: 'Missing required fields.' })
   }
 
   try {
-    await transporter.sendMail({
-      from: `"Prynia Partners Website" <${process.env.EMAIL_USER}>`,
+    await resend.emails.send({
+      from: FROM_ADDRESS,
       to: process.env.EMAIL_USER,
-      replyTo: email,
+      reply_to: email,
       subject: `New Discovery Call Request — ${name}`,
       text: `Name: ${name}\nOrganization: ${organization}\nEmail: ${email}\nPreferred Date: ${preferredDate}\nTopic: ${topic}\nPreferred Language: ${language}`,
     })
@@ -75,4 +78,4 @@ app.post('/api/discovery-call', async (req, res) => {
 })
 
 const PORT = process.env.PORT || 5000
-app.listen(PORT, () => console.log(`Server running on port:${PORT}`))
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`))

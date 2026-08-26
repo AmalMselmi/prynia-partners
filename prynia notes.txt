@@ -17,3 +17,24 @@ https://prynia.com
 
 ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​Hi this is an email test
 
+
+type: MX
+name: send
+content:feedback-smtp.eu-west-1.amazonses.com  
+
+type: TXT
+name: send
+content:v=spf1 include:amazonses.com ~all
+
+resend api key: re_3qCzdJ93_3ntz6CTgq9uw2np2pJNtUCTP
+
+
+
+
+
+
+
+
+
+
+
