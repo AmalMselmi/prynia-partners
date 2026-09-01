@@ -25,7 +25,7 @@ const resend = new Resend(process.env.RESEND_API_KEY)
  * Once prynia.com is verified in Resend's dashboard, swap this to
  * something like 'Prynia Partners Website <contact@prynia.com>'.
  */
-const FROM_ADDRESS = 'Prynia Partners Website <contact@send.prynia.com>'
+const FROM_ADDRESS = 'Prynia Partners Website <contact@prynia.com>'
 /**
  * POST /api/contact — general contact form submissions.
  */
