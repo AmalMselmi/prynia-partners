@@ -64,13 +64,15 @@ app.post('/api/discovery-call', async (req, res) => {
   }
 
   try {
-    await resend.emails.send({
+    console.log('>>> Discovery call form hit at', new Date().toISOString())
+    const response = await resend.emails.send({
       from: FROM_ADDRESS,
       to: process.env.EMAIL_USER,
       reply_to: email,
       subject: `New Discovery Call Request — ${name}`,
       text: `Name: ${name}\nOrganization: ${organization}\nEmail: ${email}\nPreferred Date: ${preferredDate}\nTopic: ${topic}\nPreferred Language: ${language}`,
     })
+    console.log('>>> Resend response:', JSON.stringify(response))
     res.status(200).json({ success: true })
   } catch (error) {
     console.error('Email send error:', error)
