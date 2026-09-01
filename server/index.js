@@ -30,6 +30,7 @@ const FROM_ADDRESS = 'Prynia Partners Website <contact@send.prynia.com>'
  * POST /api/contact — general contact form submissions.
  */
 app.post('/api/contact', async (req, res) => {
+  console.log('>>> Contact form hit at', new Date().toISOString())
   const { name, organization, email, country, message } = req.body
 
   if (!name || !email || !message) {
