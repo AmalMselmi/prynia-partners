@@ -18,13 +18,23 @@ https://prynia.com
 ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​Hi this is an email test
 
 
+type: TXT
+name: resend._domainkey
+content:p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDuRtcfS9IQgfhOTIQusf9LPTnn29kcwd5COxAtSY3xkJo7j6rbGCOKrIzfY21VpPNkitROK4m//M8DUPNGUH4Q/j9PSI/2sjyQUJ8Ieg8uX3IOUZvKhXyw02JW9QK0PfXASM0TlmIsPNsYndx8yvzzsRoBoYRdqQ/7o17wTMlmnwIDAQAB
+
+*SPF:
 type: MX
-name: send
-content:feedback-smtp.eu-west-1.amazonses.com  
+subdomain: send
+content:   feedback-smtp.eu-west-1.amazonses.com
+
 
 type: TXT
 name: send
-content:v=spf1 include:amazonses.com ~all
+content:   v=spf1 include:amazonses.com ~all
+
+TXT:
+subdomain:
+value: google-site-verification=3dckZkpxYlhqrYb6SCKGCIdlFlf75hZQ8DJovnqtQBM
 
 resend api key: re_3qCzdJ93_3ntz6CTgq9uw2np2pJNtUCTP
 
