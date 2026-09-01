@@ -38,13 +38,14 @@ app.post('/api/contact', async (req, res) => {
   }
 
   try {
-    await resend.emails.send({
+    const response = await resend.emails.send({
       from: FROM_ADDRESS,
       to: process.env.EMAIL_USER,
       reply_to: email,
       subject: `New Contact Form Submission — ${name}`,
       text: `Name: ${name}\nOrganization: ${organization}\nEmail: ${email}\nCountry: ${country}\n\nMessage:\n${message}`,
     })
+    console.log('>>> Resend response:', JSON.stringify(response))
     res.status(200).json({ success: true })
   } catch (error) {
     console.error('Email send error:', error)
