@@ -3,16 +3,14 @@ import { useForm } from 'react-hook-form'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { cn } from '../../utils/cn'
-import TeamPickerCards from '../ui/TeamPickerCards'
 
 const fieldBase =
   'w-full border border-ink/20 bg-white/60 px-4 py-3 text-sm text-ink placeholder:text-slate/60 focus-visible:outline-2 focus-visible:outline-gold transition-colors'
 
 export default function DiscoveryCallForm() {
   const { t } = useTranslation()
-  const [showCalendly, setShowCalendly] = useState(false)
   const [submitted, setSubmitted] = useState(false)
-  const [booked, setBooked] = useState(false)
+
 
   const {
     register,
@@ -56,32 +54,22 @@ export default function DiscoveryCallForm() {
       className="flex flex-col items-start gap-4 border border-gold/30 bg-emerald-soft px-8 py-10"
       role="status"
     >
-      {booked ? (
-        <>
-          <h3 className="font-display text-xl text-ink">
-            {t('contact.discoveryCall.form.successTitle')}
-          </h3>
-          <p className="max-w-xl text-sm leading-relaxed text-ink/70">
-            {t('contact.discoveryCall.form.successBody')}
-          </p>
-          <button
-            type="button"
-            onClick={() => {
-              setSubmitted(false)
-              setBooked(false)
-            }}
-            className="mt-2 font-body text-sm font-medium text-gold transition-colors hover:text-ink"
-          >
-            {t('contact.discoveryCall.form.sendAnother')}
-          </button>
-        </>
-      ) : (
-        <TeamPickerCards onBooked={() => setBooked(true)} />
-      )}
+      <h3 className="font-display text-xl text-ink">
+        {t('contact.discoveryCall.form.successTitle')}
+      </h3>
+      <p className="max-w-xl text-sm leading-relaxed text-ink/70">
+        {t('contact.discoveryCall.form.successBody')}
+      </p>
+      <button
+        type="button"
+        onClick={() => setSubmitted(false)}
+        className="mt-2 font-body text-sm font-medium text-gold transition-colors hover:text-ink"
+      >
+        {t('contact.discoveryCall.form.sendAnother')}
+      </button>
     </motion.div>
   )
 }
-
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
